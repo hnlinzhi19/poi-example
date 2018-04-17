@@ -17,6 +17,10 @@ module.exports = {
       }
     },
   },
+  "globals": {
+    'window': true,
+    'wx': true
+  },
   rules:{
     'linebreak-style': 0,
     "indent": ["error", 2]
