@@ -4,6 +4,21 @@
   </div>
 </template>
 
+<script>
+export default {
+  mounted(){
+    axios.get('/api/test')
+    .then(function (response) {
+      console.log(response);
+    })
+    .catch(function (error) {
+      console.log(error);
+    });
+  }
+}
+</script>
+
+
 <style lang="scss">
   @import './assets/css/base.scss';
   

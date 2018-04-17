@@ -7,5 +7,8 @@ module.exports = {
         remUnit: 75
       })
     ]
+  },
+  devServer: {
+    proxy: 'http://yapi.demo.qunar.com/mock/6212/api'
   }
 };
