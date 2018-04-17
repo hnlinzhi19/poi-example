@@ -5,8 +5,8 @@
 </template>
 
 <style lang="scss">
-.test{
-  display: flex;
-  width: 100px;
-}
+  .test {
+    display: flex;
+    width: 100px;
+  }
 </style>
