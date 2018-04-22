@@ -1,6 +1,6 @@
 module.exports = {
   entry: './src/index.js',
-  homepage: '/test/',
+  publicPath: '/test/',
   postcss: {
     plugins: [
       require('postcss-px2rem')({
@@ -9,6 +9,8 @@ module.exports = {
     ]
   },
   devServer: {
-    proxy: 'http://yapi.demo.qunar.com/mock/6212/api'
+    proxy: {
+      "/api": "http://yapi.demo.qunar.com/mock/6212/api"
+    }
   }
 };
